@@ -254,5 +254,8 @@ const elves = [[15560,3906,7076,11980,11508],
 [58403],
 [4016,7056,1553,6623,2657,6527,1626,3935,3430,5920,3460]]
 
-let fattestElf = elves.map(elf => elf.reduce((a,b) => a+b)).sort((a,b) => b - a).slice(0, 3).reduce((a,b) => a+b)
-console.log(fattestElf)
+
+//part1:
+let partOne = elves.map(elf => elf.reduce((a,b) => a+b)).sort((a,b) => b - a).slice(-1)
+//part2:
+let partTwo = elves.map(elf => elf.reduce((a,b) => a+b)).sort((a,b) => b - a).slice(0, 3).reduce((a,b) => a+b)
