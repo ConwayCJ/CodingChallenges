@@ -257,5 +257,7 @@ const elves = [[15560,3906,7076,11980,11508],
 
 //part1:
 let partOne = elves.map(elf => elf.reduce((a,b) => a+b)).sort((a,b) => b - a).slice(-1)
+//logs 69528
 //part2:
 let partTwo = elves.map(elf => elf.reduce((a,b) => a+b)).sort((a,b) => b - a).slice(0, 3).reduce((a,b) => a+b)
+//logs 206152
