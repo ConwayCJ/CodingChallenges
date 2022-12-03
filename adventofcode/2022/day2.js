@@ -2576,7 +2576,6 @@ data.forEach(game => {
       myChoice = 'A'  
     }
   }
-  
 
   //Lets add default points for my pick
   switch (myChoice) {
@@ -2590,7 +2589,6 @@ data.forEach(game => {
       myPoints+=3
       break;
   }
-
   //win/tie/loss conditions
   //tie 
     if (myChoice == theirChoice) {
