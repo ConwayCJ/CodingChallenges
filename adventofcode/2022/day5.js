@@ -524,20 +524,15 @@ console.log(boxes[1])
 //variable to hold objects with move set
 //pushes new object with move set into moves variable
 
-//part 1...
-
-//part 2 - update to move multiple.
 movesArray.forEach(move => {
   
   //pt1
-/*for (let i = 0; i < move[0]; i++) {
+  for (let i = 0; i < move[0]; i++) {
     let boxToMove = boxes[move[1]].shift()
     boxes[move[2]].unshift(boxToMove)
-  }*/
-
+  }
   //pt2
   let boxesToMove = boxes[move[1]].splice(0, move[0])
   boxes[move[2]].unshift(...boxesToMove)
 })
-
 console.log(boxes)
