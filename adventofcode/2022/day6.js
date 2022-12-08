@@ -14,8 +14,7 @@ for (let i = 0; i < input.length; i++) {
   }
 
   currentFourLetters.push(input.charAt(i))
-  console.log('pushing new char ' + i)
-  console.log(currentFourLetters)
+  
   if (!hasDuplicates(currentFourLetters) && currentFourLetters.length == numberToParse) {
     console.log('number of characters parsed: ' + (i + 1)) 
     break;
